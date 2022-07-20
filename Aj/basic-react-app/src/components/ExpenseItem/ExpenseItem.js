@@ -1,8 +1,7 @@
 import './ExpenseItem.css'
-import ExpenseDate from './ExpenseDate'
+import ExpenseDate from '../ExpenseDate/ExpenseDate'
+
 function ExpenseItem(props) {
-
-
     const expenseTitle = props.title;
     const expenseAmount = props.amount;
     return (
