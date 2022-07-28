@@ -1,4 +1,4 @@
-import ExpenseDate from '../ExpenseDate/ExpenseDate'
+import ExpenseDate from './ExpenseDate'
 import './ExpenseItem.css'
 import Card from '../Card/Card';
 
