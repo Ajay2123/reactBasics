@@ -5,7 +5,7 @@ import Card from '../Card/Card';
 
 const ExpenseItem = (props) => {
     let [amount, setAmount] = useState(props.amount);
-    const clickHandler = () => setAmount(amount += 1);
+    const clickHandler = () => setAmount(previousState => { return previousState += 1 });
 
     return (
         <Card className="expense-item">
