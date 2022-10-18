@@ -1,7 +1,7 @@
 import "./ExpenseForm.css"
 import { useState } from "react"
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
 
     const [currentValue, setValue] = useState({
         titleValue: '',
@@ -41,6 +41,7 @@ const ExpenseForm = () => {
                 dateValue: ''
             }
         })
+        props.onSaveExpenseData(expenseData)
     }
     return (
         <form className="new-expense-controls" onSubmit={submitHandler}>
